@@ -71,5 +71,6 @@ history = model.fit(
 # model.save_weights("nusax_rnn.weights.h5")
 
 weights = model.get_weights()
+model.summary()
 for i, w in enumerate(weights):
     print(f"Weight {i}: shape {w.shape}")
